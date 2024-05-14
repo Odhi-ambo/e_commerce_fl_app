@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sneaker_e_commerce/pages/home_page.dart';
 import 'package:sneaker_e_commerce/pages/intro_page.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: IntroPage(),
+      home: HomePage(),
     );
   }
 }
