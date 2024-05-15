@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:sneaker_e_commerce/pages/home_page.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({super.key});
@@ -40,9 +41,12 @@ class IntroPage extends StatelessWidget {
                 height: 25,
               ),
               GestureDetector(
-                //  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage(),
-                //  ),
-                //  ),
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => HomePage(),
+                  ),
+                ),
                 child: Container(
                   decoration: BoxDecoration(
                       color: Colors.black,
