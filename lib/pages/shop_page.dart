@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sneaker_e_commerce/components/shoe_tile.dart';
+import 'package:sneaker_e_commerce/models/shoe.dart';
 
 class ShopPage extends StatefulWidget {
   const ShopPage({super.key});
@@ -56,6 +58,23 @@ class _ShopPageState extends State<ShopPage> {
                     TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
               )
             ],
+          ),
+        ),
+        const SizedBox(
+          height: 10,
+        ),
+        Expanded(
+          child: ListView.builder(
+            itemBuilder: (context, index) {
+              Shoe shoe = Shoe(
+                  ImagePath: 'lib/images/images (1).jfif',
+                  description: 'Looks',
+                  name: 'Nikey',
+                  price: '3000ksh');
+              return ShoeTile(
+                shoe: shoe,
+              );
+            },
           ),
         )
       ],
