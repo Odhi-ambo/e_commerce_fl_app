@@ -65,18 +65,22 @@ class _ShopPageState extends State<ShopPage> {
         ),
         Expanded(
           child: ListView.builder(
+            itemCount: 4,
+            scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
               Shoe shoe = Shoe(
-                  ImagePath: 'lib/images/images (1).jfif',
-                  description: 'Looks',
-                  name: 'Nikey',
-                  price: '3000ksh');
+                name: 'Nikey',
+                price: '3000ksh',
+                imagePath:
+                    'lib/images/sport-shoe-mockup-isolated_1310-1630.jpg',
+                description: 'Looks',
+              );
               return ShoeTile(
                 shoe: shoe,
               );
             },
           ),
-        )
+        ),
       ],
     );
   }
