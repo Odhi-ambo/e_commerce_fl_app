@@ -15,6 +15,9 @@ class ShoeTile extends StatelessWidget {
         color: Colors.grey[100],
         borderRadius: BorderRadius.circular(12),
       ),
+      child: Column(
+        children: [Image.asset(shoe.imagePath)],
+      ),
     );
   }
 }
