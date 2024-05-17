@@ -39,8 +39,8 @@ class _HomePageState extends State<HomePage> {
         elevation: 0,
         leading: Builder(builder: (context) {
           return IconButton(
-            icon: Padding(
-              padding: const EdgeInsets.only(left: 12.0),
+            icon: const Padding(
+              padding: EdgeInsets.only(left: 12.0),
               child: Icon(
                 Icons.menu,
                 color: Colors.black,
@@ -69,8 +69,8 @@ class _HomePageState extends State<HomePage> {
                     color: Colors.grey[800],
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 25.0),
+                const Padding(
+                  padding: EdgeInsets.only(left: 25.0),
                   child: ListTile(
                     leading: Icon(
                       Icons.home,
@@ -82,8 +82,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 25.0),
+                const Padding(
+                  padding: EdgeInsets.only(left: 25.0),
                   child: ListTile(
                     leading: Icon(
                       Icons.info,
@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
             const Padding(
-              padding: const EdgeInsets.only(left: 25.0, bottom: 25.0),
+              padding: EdgeInsets.only(left: 25.0, bottom: 25.0),
               child: ListTile(
                 leading: Icon(
                   Icons.logout,
