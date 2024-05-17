@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:sneaker_e_commerce/pages/home_page.dart';
 
 class IntroPage extends StatelessWidget {
@@ -23,15 +22,15 @@ class IntroPage extends StatelessWidget {
               const SizedBox(
                 height: 48,
               ),
-              Text(
-                'Rugby Wear Innit!',
+              const Text(
+                'Rugby wear innit!',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               const SizedBox(
                 height: 25,
               ),
-              Text(
-                'Brand new SPORTSWEAR and custom kicks za dimba na ubaba. ',
+              const Text(
+                'Brand new SPORTSWEAR and custom kicks za dimba  ubaba. ',
                 style: TextStyle(fontSize: 18, color: Colors.grey),
                 textAlign: TextAlign.center,
               ),
@@ -42,15 +41,15 @@ class IntroPage extends StatelessWidget {
                 onTap: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => HomePage(),
+                    builder: (context) => const HomePage(),
                   ),
                 ),
                 child: Container(
                   decoration: BoxDecoration(
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(12)),
-                  padding: EdgeInsets.all(25.0),
-                  child: Center(
+                  padding: const EdgeInsets.all(25.0),
+                  child: const Center(
                     child: Text(
                       'Shop Now',
                       style: TextStyle(color: Colors.white),
