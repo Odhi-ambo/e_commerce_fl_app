@@ -24,7 +24,7 @@ class IntroPage extends StatelessWidget {
                 height: 48,
               ),
               Text(
-                'Rugby wear innit!',
+                'Rugby Wear Innit!',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               const SizedBox(
