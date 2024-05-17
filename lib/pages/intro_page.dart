@@ -8,7 +8,7 @@ class IntroPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 25.0),
         child: Center(
@@ -17,24 +17,22 @@ class IntroPage extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.all(25.0),
-                child: Image.asset(
-                  'lib/images/imageslogo.png',
-                  height: 240,
-                ),
+                child: Image.asset('lib/images/download (2).jfif',
+                    height: 240, fit: BoxFit.cover),
               ),
               const SizedBox(
                 height: 48,
               ),
               Text(
-                'Just Do It',
+                'Rugby wear innit!',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               const SizedBox(
                 height: 25,
               ),
               Text(
-                'Brand new sneakers and custom kicks made with premium quality ',
-                style: TextStyle(fontSize: 18, color: Colors.white),
+                'Brand new SPORTSWEAR and custom kicks za dimba na ubaba. ',
+                style: TextStyle(fontSize: 18, color: Colors.grey),
                 textAlign: TextAlign.center,
               ),
               const SizedBox(
