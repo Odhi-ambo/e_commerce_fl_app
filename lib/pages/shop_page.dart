@@ -16,7 +16,7 @@ class _ShopPageState extends State<ShopPage> {
     Provider.of<Cart>(context, listen: false).addItemToCart(shoe);
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
+      builder: (context) => const AlertDialog(
         title: Text('Succesfully added!'),
         content: Text('Check your cart'),
       ),
@@ -30,12 +30,12 @@ class _ShopPageState extends State<ShopPage> {
         children: [
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 25.0),
-            padding: EdgeInsets.all(12.0),
+            padding: const EdgeInsets.all(12.0),
             decoration: BoxDecoration(
               color: Colors.grey[200],
               borderRadius: BorderRadius.circular(8),
             ),
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
@@ -49,15 +49,15 @@ class _ShopPageState extends State<ShopPage> {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 25.0),
+          const Padding(
+            padding: EdgeInsets.symmetric(vertical: 25.0),
             child: Text(
               'Merchandise za job job tu....',
               style: TextStyle(color: Colors.white),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 25.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.end,
@@ -91,8 +91,8 @@ class _ShopPageState extends State<ShopPage> {
               },
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(top: 25.0, right: 25.0),
+          const Padding(
+            padding: EdgeInsets.only(top: 25.0, right: 25.0),
             child: Divider(
               color: Colors.white,
             ),
